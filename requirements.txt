@@ -1,8 +1,7 @@
---extra-index-url https://download.pytorch.org/whl/cu121
-torch==2.5.1+cu121
-torchvision==0.20.1+cu121
+torch
+torchvision
 ultralytics>=8.3.0
-opencv-python>=4.8.0
+opencv-python-headless>=4.8.0
 pillow>=10.0.0
 matplotlib>=3.8.0
 pandas>=2.0.0
