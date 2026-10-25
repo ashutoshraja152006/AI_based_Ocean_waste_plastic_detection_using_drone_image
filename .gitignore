@@ -1,0 +1,29 @@
+# Python Virtual Environment (Heavy binary packages)
+.venv/
+env/
+venv/
+ENV/
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.ipynb_checkpoints/
+
+# Heavy Raw and Training Datasets (Thousands of training images)
+data/raw/
+data/processed/yolo_dataset/train/
+data/processed/yolo_dataset/valid/
+*.cache
+
+# Heavy temporary prediction outputs
+outputs/predictions/
+
+# Optional large weights
+weights/yolo26n.pt
+
+# OS & Editor generated files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

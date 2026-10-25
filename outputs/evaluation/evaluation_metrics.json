@@ -1,0 +1,17 @@
+{
+    "model": "outputs\\models\\ocean_plastic_yolov8n\\weights\\best.pt",
+    "validation_split": {
+        "Precision": 0.8476,
+        "Recall": 0.8416,
+        "F1_Score": 0.8446,
+        "mAP50": 0.8814,
+        "mAP50_95": 0.6892
+    },
+    "unseen_test_split": {
+        "Precision": 0.8413,
+        "Recall": 0.9057,
+        "F1_Score": 0.8723,
+        "mAP50": 0.9041,
+        "mAP50_95": 0.6906
+    }
+}

@@ -1,0 +1,11 @@
+--extra-index-url https://download.pytorch.org/whl/cu121
+torch==2.5.1+cu121
+torchvision==0.20.1+cu121
+ultralytics>=8.3.0
+opencv-python>=4.8.0
+pillow>=10.0.0
+matplotlib>=3.8.0
+pandas>=2.0.0
+pyyaml>=6.0
+tqdm>=4.66.0
+streamlit>=1.35.0

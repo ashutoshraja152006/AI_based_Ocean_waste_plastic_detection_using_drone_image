@@ -1,0 +1,12 @@
+# YOLO Dataset Configuration for AI-Based Ocean Waste Plastic Detection
+path: C:/B.TECH/DAML/DL/PROJECT/AI_based_Ocean_waste_plastic_detection_using_drone_image/data/processed/yolo_dataset
+train: train/images
+val: valid/images
+test: test/images
+
+# Number of classes
+nc: 1
+
+# Class names
+names:
+  0: plastic_waste
