@@ -127,7 +127,18 @@ python src/detect_video.py --video "path_to_drone_footage.mp4" --conf 0.30
 
 ---
 
-## 💡 Technical Innovations
-1. **Automated Bounding-Box Generation**: Solved the challenge of unannotated raw classification data by developing a CIELAB color-opponent chromaticity filter combined with morphological Top-Hat filters to detect floating debris against dynamic ocean ripple backgrounds.
-2. **Nadir Drone Data Augmentations**: Applied rotational and vertical flip invariants since aerial drones observe waste from a 90-degree nadir top-down viewpoint.
-3. **Edge Optimization**: Chose YOLOv8 Nano (`yolov8n.pt`) with only 3.01 million parameters, enabling real-time on-board inference on embedded drone hardware (e.g., NVIDIA Jetson).
+## 💡 Technical Innovations & Implemented Features
+
+### 🌟 Core & Advanced Decision-Support System (12 Features)
+1. **Plastic Waste Detection**: Deep learning object localization of marine plastic debris.
+2. **Plastic Localization**: Pixel-precise bounding box coordinates $[x_1, y_1, x_2, y_2]$.
+3. **Plastic Type Classification**: Morphology-based categorization (Bottles/Containers, Surgical Masks, Bags/Films, Micro-fragments).
+4. **Pollution Severity Analysis**: 4-Tier classification (*Low*, *Medium*, *High*, *Critical*).
+5. **Ocean Plastic Hotspot Detection**: $3 \times 3$ geographical sector grid identifying spatial debris concentration clusters.
+6. **Cleanup Priority Analysis**: Operational priority ranking (*Low*, *Medium*, *High*) for cleanup deployment.
+7. **Historical Pollution Comparison**: Side-by-side comparative inspection delta ($\Delta$ debris count and surface area change).
+8. **Pollution Trend Analysis**: Chronological tracking showing if pollution is Increasing ↗️, Decreasing ↘️, or Stable.
+9. **Waste Density & Area Estimation**: Surface coverage percentage calculation and spatial debris density (items/MegaPixel).
+10. **AI-Based Cleanup Recommendation**: Automated equipment suggestions (Autonomous Surface Vessel, Boom Netting, Drone Retrieval) and urgency assessment.
+11. **Interactive Monitoring Dashboard**: Multi-tab Streamlit interface with live controls, metrics, and video streaming.
+12. **Detection History**: Persistent logging of previous drone inspection passes for long-term monitoring.
